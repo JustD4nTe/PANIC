@@ -1,0 +1,4 @@
+Czarny;2;1;k
+b;11;1;k
+b;4;1;NormalPawn
+b;5;1;k
