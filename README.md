@@ -36,17 +36,15 @@ From your command line:
 
 ## Features
 List of features ready and To-do's which should be introduced
-* Make backup of entire project
+* Make backup of input and output folder
 * Parsing data
 * Generates a map of frequency for each pawn's type
 
 To-do list:
-* Make backup only of In, Out folder
 * Embellish website
-* run internal program by command not exe file
 
 ## Status
-Project is: _in progress_ because it needs some changes of structure (I will make it more sensible). Now it meets the assumptions of final project for my subject (It's looks awful).
+Project is: _no longer continue_ because I'm not interested in this project anymore (but i will try make a website more prettier).
 
 ## Inspiration
 Project based on polish programming competition [Algorytmion](http://algorytmion.ms.polsl.pl/), exercise 4 from 2014 yr.
