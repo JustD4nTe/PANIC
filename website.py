@@ -42,7 +42,7 @@ newIndex = open("html\index_template.html", "r", encoding="utf-8").read().replac
     "TableHere", tableOfOutput)
 
 # save page
-open("html\index.html", "w", encoding="utf-8").write(newIndex)
+open("wwwroot\index.html", "w", encoding="utf-8").write(newIndex)
 
 print("Creating heatmaps...")
 
@@ -114,7 +114,7 @@ plt.tight_layout()
 
 
 # save heatmap
-ax.get_figure().savefig('html\heatmap.png')
+ax.get_figure().savefig('wwwroot\heatmap.png')
 print("Opening website...")
 
-openWebrowser("file://" + realPath("html\index.html"))
+openWebrowser("file://" + realPath("wwwroot\index.html"))
