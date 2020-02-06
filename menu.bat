@@ -43,20 +43,19 @@ if %choice%==1 (
     set ss=%time:~6,2%
     set folder="backup\%date%-%hh%_%mm%_%ss%"
 
-    if not exist "%folder%" (
-        echo Creating directory %folder%
-        mkdir "%folder%"
-    )
+    mkdir "%folder%\In"
+    mkdir "%folder%\Out"
+    
+    ROBOCOPY .\In %folder%\In
+    ROBOCOPY .\Out %folder%\Out
 
-    echo.
-    ROBOCOPY .\ %folder% /S /XD backup
     echo.
     pause
     goto START
 
 ) else if %choice%==4 (
     echo.
-    echo Shutting a program...
+    echo Shutting the program...
     echo.
     pause
     exit /B 
