@@ -17,7 +17,9 @@ set /p choice="Enter choice(number): "
 if %choice%==1 (
     echo.
     echo Running program...
-    "%CD%\program\PossiblePawnsMoves.exe" "%CD%\In" "%CD%\Out"
+    cd program
+    dotnet run  "..\In" "..\Out"
+    cd ..
     echo Running python script..
     py website.py
     pause
